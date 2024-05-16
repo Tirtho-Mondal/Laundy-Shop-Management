@@ -1,6 +1,15 @@
 # Laundy-Shop-Management
 Oracle SQL Database Project
 
+
+## About Me
+
+- **Name:** Tirtho Mondal
+- **Department:** Computer Science and Engineering
+- **Roll:** 2007117
+- **Year:** 3rd
+- **Term:** 1st
+
 ## Introduction
 
 In the contemporary business landscape, efficient data management is pivotal for operational success. This holds particularly true for businesses like laundry shops, where a multitude of transactions occur daily. This document presents an in-depth analysis of the design and implementation of a relational database tailored for a laundry shop. By leveraging structured data storage and retrieval mechanisms, the laundry shop can streamline its operations, enhance customer service, and drive profitability.
@@ -65,14 +74,20 @@ SQL queries and functionality are indispensable components of our project, empow
 - **Add column**: `ALTER TABLE employees ADD age NUMBER;`
 
 - **Searching**:
-  - Find the clients whose firstname starts with 'T' and lastname with 'M': `SELECT * FROM clients WHERE firstname LIKE 'T%' AND lastname LIKE 'M%';`
+  - Find the clients whose firstname starts with 'T' and lastname with 'M':
+    ```sql
+     SELECT * FROM clients WHERE firstname LIKE 'T%' AND lastname LIKE 'M%';
+    ```
   - Find the average age of employees grouped by their position, where the average age is greater than 32:
 
     ```sql
     SELECT position, AVG(age) AS avg_age FROM employees GROUP BY position HAVING AVG(age) > 32;
     ```
 
-- **Update**: `UPDATE cloths SET clothtype = 'shirt', color = 'black', sizee = 'xl' WHERE clothid = 3;`
+- **Update**:
+  ```sql
+  UPDATE cloths SET clothtype = 'shirt', color = 'black', sizee = 'xl' WHERE clothid = 3;
+  ```
 
 - **Advanced SQL Command**:
   - The eldest employee:
@@ -159,4 +174,6 @@ In conclusion, the development and implementation of a relational database tailo
 - [Free Projects: Laundry Management System Database Design](https://itsourcecode.com/free-projects/database-design-projects/laundry-management-system-database-design/)
 - [Laundry Management System Capstone Project Document](https://capstoneguide.com/laundry-management-system-capstone-project-document/)
 - [DrawSQL: Online Database Diagram Tool](https://drawsql.app/)
+
+
 
