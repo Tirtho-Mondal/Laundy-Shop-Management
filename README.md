@@ -61,8 +61,16 @@ Normalization was employed to eliminate data redundancy and dependency anomalies
 SQL queries and functionality are indispensable components of our project, empowering users to seamlessly engage with the database. Here, we outline pivotal SQL queries and functionalities crucial for optimal system operation.
 
 - **Data Retrieval**:
-  - Retrieve Clients Information: `SELECT * FROM clients WHERE address = 'Khulna, Bangladesh';`
-  - The Sum of the subtotal of a clients: `SELECT SUM(subtotal) AS total_subtotal FROM orderdetails WHERE clientid = 'x';`
+  - Retrieve Clients Information:
+    
+    ```sql
+    SELECT * FROM clients WHERE address = 'Khulna, Bangladesh';
+    ```
+  - The Sum of the subtotal of a clients:
+    
+    ```sql
+    SELECT SUM(subtotal) AS total_subtotal FROM orderdetails WHERE clientid = 'x';
+    ```
   - The information of the client who paid the highest amount single transaction (using Nested query):
 
     ```sql
@@ -71,7 +79,11 @@ SQL queries and functionality are indispensable components of our project, empow
     SELECT MAX(unitprice) FROM orderdetails));
     ```
 
-- **Add column**: `ALTER TABLE employees ADD age NUMBER;`
+- **Add column**:
+  
+    ```sql
+  ALTER TABLE employees ADD age NUMBER;
+    ```
 
 - **Searching**:
   - Find the clients whose firstname starts with 'T' and lastname with 'M':
