@@ -1,4 +1,4 @@
-# Laundy-Shop-Management
+# Laundry-Shop-Management
 Oracle SQL Database Project
 
 
